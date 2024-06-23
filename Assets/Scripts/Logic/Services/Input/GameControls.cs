@@ -55,15 +55,6 @@ namespace Logic.Services.Input
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Pause"",
-                    ""type"": ""Button"",
-                    ""id"": ""11d260d1-b18a-4b75-8a25-c18d1591e3e3"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -156,28 +147,6 @@ namespace Logic.Services.Input
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""96061cb4-8dfc-427c-9fc6-add9e6ffb3c0"",
-                    ""path"": ""<Keyboard>/escape"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Pause"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""b5f6759d-959c-4805-a604-73e9904bbf6d"",
-                    ""path"": ""<Gamepad>/start"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Pause"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
                     ""name"": ""Keyboard"",
                     ""id"": ""a92a6962-d431-427f-b995-d85be1219af9"",
                     ""path"": ""1DAxis"",
@@ -259,7 +228,6 @@ namespace Logic.Services.Input
             m_Prototype_Move = m_Prototype.FindAction("Move", throwIfNotFound: true);
             m_Prototype_Attack = m_Prototype.FindAction("Attack", throwIfNotFound: true);
             m_Prototype_ChangeSkill = m_Prototype.FindAction("ChangeSkill", throwIfNotFound: true);
-            m_Prototype_Pause = m_Prototype.FindAction("Pause", throwIfNotFound: true);
         }
 
         public void Dispose()
@@ -324,7 +292,6 @@ namespace Logic.Services.Input
         private readonly InputAction m_Prototype_Move;
         private readonly InputAction m_Prototype_Attack;
         private readonly InputAction m_Prototype_ChangeSkill;
-        private readonly InputAction m_Prototype_Pause;
         public struct PrototypeActions
         {
             private @GameControls m_Wrapper;
@@ -332,7 +299,6 @@ namespace Logic.Services.Input
             public InputAction @Move => m_Wrapper.m_Prototype_Move;
             public InputAction @Attack => m_Wrapper.m_Prototype_Attack;
             public InputAction @ChangeSkill => m_Wrapper.m_Prototype_ChangeSkill;
-            public InputAction @Pause => m_Wrapper.m_Prototype_Pause;
             public InputActionMap Get() { return m_Wrapper.m_Prototype; }
             public void Enable() { Get().Enable(); }
             public void Disable() { Get().Disable(); }
@@ -351,9 +317,6 @@ namespace Logic.Services.Input
                 @ChangeSkill.started += instance.OnChangeSkill;
                 @ChangeSkill.performed += instance.OnChangeSkill;
                 @ChangeSkill.canceled += instance.OnChangeSkill;
-                @Pause.started += instance.OnPause;
-                @Pause.performed += instance.OnPause;
-                @Pause.canceled += instance.OnPause;
             }
 
             private void UnregisterCallbacks(IPrototypeActions instance)
@@ -367,9 +330,6 @@ namespace Logic.Services.Input
                 @ChangeSkill.started -= instance.OnChangeSkill;
                 @ChangeSkill.performed -= instance.OnChangeSkill;
                 @ChangeSkill.canceled -= instance.OnChangeSkill;
-                @Pause.started -= instance.OnPause;
-                @Pause.performed -= instance.OnPause;
-                @Pause.canceled -= instance.OnPause;
             }
 
             public void RemoveCallbacks(IPrototypeActions instance)
@@ -401,7 +361,6 @@ namespace Logic.Services.Input
             void OnMove(InputAction.CallbackContext context);
             void OnAttack(InputAction.CallbackContext context);
             void OnChangeSkill(InputAction.CallbackContext context);
-            void OnPause(InputAction.CallbackContext context);
         }
     }
 }
