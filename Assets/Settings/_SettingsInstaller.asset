@@ -23,3 +23,5 @@ MonoBehaviour:
   _enemyPrefabs: {fileID: 11400000, guid: ad0d2adbd3d42e44bba81209074ceb4e, type: 2}
   _enemiesSettings: {fileID: 11400000, guid: 965d885340bcf0a4b82f931c2c80f2d6, type: 2}
   _projectilePrefabs: {fileID: 11400000, guid: 50a33e70dfbeb234d94e2c42af1e5c8a, type: 2}
+  _playerSkillSprites: {fileID: 11400000, guid: 1955046d08e07a546a7a0001ae4dbb1c,
+    type: 2}

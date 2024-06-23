@@ -7,6 +7,7 @@ using Logic.Levels;
 using Logic.Signals;
 using UniRx;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Utilities;
 using Zenject;
 
@@ -36,6 +37,8 @@ namespace Logic.Core
                 .SelectMany(LoadingEnemySpawner)
                 .Subscribe(_ => OnCompleteLoading())
                 .AddTo(this);
+            
+            _signalBus.Subscribe<NeedReloadCoreGameplayEvent>(ReloadScene);
         }
 
         private void OnCompleteLoading()
@@ -44,10 +47,16 @@ namespace Logic.Core
             _signalBus.Fire<LevelLoadedEvent>();
         }
 
+        private void ReloadScene()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
         private void OnDestroy()
         {
             _pauseState.Value = true;
             _addressablesHelper.DisposeAll();
+            _signalBus.Unsubscribe<NeedReloadCoreGameplayEvent>(ReloadScene);
         }
         
         private IEnumerator LoadingLevel() => _level.Initialize().ToCoroutine();

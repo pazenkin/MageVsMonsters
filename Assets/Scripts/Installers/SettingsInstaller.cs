@@ -1,4 +1,5 @@
 ﻿using Logic.Data.Settings;
+using Ui.Settings;
 using UnityEngine;
 using Zenject;
 
@@ -19,6 +20,7 @@ namespace Installers
         [SerializeField] private EnemyPrefabs _enemyPrefabs;
         [SerializeField] private EnemiesSettings _enemiesSettings;
         [SerializeField] private ProjectilePrefabs _projectilePrefabs;
+        [SerializeField] private PlayerSkillSprites _playerSkillSprites;
         
         public override void InstallBindings()
         {
@@ -31,7 +33,8 @@ namespace Installers
                 _enemySpawningSettings,
                 _enemyPrefabs,
                 _enemiesSettings,
-                _projectilePrefabs);
+                _projectilePrefabs,
+                _playerSkillSprites);
         }
     }
 }

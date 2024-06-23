@@ -19,6 +19,7 @@ namespace Installers
             Container.DeclareSignal<LevelLoadedEvent>();
             Container.DeclareSignal<LevelEndedEvent>();
             Container.DeclareSignal<ChangePlayerPositionEvent>();
+            Container.DeclareSignal<NeedReloadCoreGameplayEvent>();
         }
     }
 }
