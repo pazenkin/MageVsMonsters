@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Projectiles
+  m_EditorClassIdentifier: 
+  m_GroupName: Projectiles
+  m_Data:
+    m_SerializedData: []
+  m_GUID: bc58a6b16a9fa704bace98002fa575aa
+  m_SerializeEntries:
+  - m_GUID: 92b5506e03c6d184caae535251697da9
+    m_Address: Assets/Prefabs/Projectiles/Base Projectile.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4a0302f631618e140a9e342753c2e8b3
+    m_Address: Assets/Prefabs/Projectiles/FireBall.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f63ed69dd9f3e53429b78f50912a2a7b
+    m_Address: Assets/Prefabs/Projectiles/FrostRing.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 695b6136eacd04843aa1b5a6e67f2587, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: cfb8c97cd3f69d74f99fcc812afd4915, type: 2}
+    - {fileID: 11400000, guid: 84b28d1051653e34a8bcf715f9c8996a, type: 2}

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b4403f2a8d94419ad97ce2d224b033e, type: 3}
+  m_Name: _SettingsInstaller
+  m_EditorClassIdentifier: 
+  _playerWeaponSettings: {fileID: 11400000, guid: 52a06289cfc4645429bd131cb86a73d0,
+    type: 2}
+  _levelPrefabs: {fileID: 11400000, guid: 8d7ae78e4695e94419bfe80a012d39d8, type: 2}
+  _poolPrefabs: {fileID: 11400000, guid: ed3b6d0ceaebbc44da57ea4d8640a064, type: 2}
+  _playerPrefabs: {fileID: 11400000, guid: 623b7052f3531cc49893ffce3b27d82a, type: 2}
+  _playersSettings: {fileID: 11400000, guid: f8ea7b22b7d04464888972642d43a470, type: 2}
+  _enemySpawningSettings: {fileID: 11400000, guid: 64b815ed023749144a024169f8fded5c,
+    type: 2}
+  _enemyPrefabs: {fileID: 11400000, guid: ad0d2adbd3d42e44bba81209074ceb4e, type: 2}
+  _enemiesSettings: {fileID: 11400000, guid: 965d885340bcf0a4b82f931c2c80f2d6, type: 2}
+  _projectilePrefabs: {fileID: 11400000, guid: 50a33e70dfbeb234d94e2c42af1e5c8a, type: 2}

@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Enemies
+  m_EditorClassIdentifier: 
+  m_GroupName: Enemies
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 8de1a2958ea17b3469b3b3435efad815
+  m_SerializeEntries:
+  - m_GUID: b4e990c0867a2df4c8c94047ac3dc605
+    m_Address: Assets/Prefabs/Characters/Enemy Models/RedHead.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 64b80cec2f261294f94b475e0275e141
+    m_Address: Assets/Prefabs/Characters/Enemy Models/Demon.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5551cdbf23496af4aa3f6741e150a3d7
+    m_Address: Assets/Prefabs/Characters/Enemy Models/BigBoss.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 392e2fe1e5b468543b90b2063adde680
+    m_Address: Assets/Prefabs/Characters/Enemy Models/BlueHead.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 695b6136eacd04843aa1b5a6e67f2587, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 7028e2a3ff80a1c45af530b9424dc7c7, type: 2}
+    - {fileID: 11400000, guid: 4d0560f74baa3284783600ca126456b9, type: 2}

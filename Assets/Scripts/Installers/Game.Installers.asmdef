@@ -1,0 +1,19 @@
+{
+    "name": "Game.Installers",
+    "rootNamespace": "",
+    "references": [
+        "GUID:4c702ba373bf71d4084cdf2a6961a11b",
+        "GUID:22a53247b33688545a79e656b0410921",
+        "GUID:ad1dd979ab020be4d81d64b565923a4d",
+        "GUID:0d8beb7f090555447a6cf5ce9e54dbb4"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

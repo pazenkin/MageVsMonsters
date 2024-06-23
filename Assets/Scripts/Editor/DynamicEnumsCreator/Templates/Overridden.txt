@@ -1,0 +1,6 @@
+namespace CustomDynamicEnums
+{
+    public enum @ENUM_NAME
+    {
+    };
+}
